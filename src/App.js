@@ -8,6 +8,7 @@ import Header from "./components/layout/Header"
 import AddContact from './components/contact/AddContact'
 import About from './components/pages/About'
 import NotFound from './components/pages/NotFound'
+import Test from './components/test/Test'
 
 class App extends Component {
     render() {
@@ -22,6 +23,7 @@ class App extends Component {
                                 <Route exact path="/about/:id" component={About}/>
                                 <Route exact path="/about/" component={About}/>
                                 <Route exact path="/contact/add" component={AddContact}/>
+                                <Route exact path="/test" component={Test}/>
                                 <Route component={NotFound}/>
                             </Switch>
                         </div>
